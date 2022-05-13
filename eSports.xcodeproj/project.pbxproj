@@ -13,6 +13,9 @@
 		EEDAF2D4282EA0BA00768A69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF2D3282EA0BA00768A69 /* Preview Assets.xcassets */; };
 		EEDAF2EF282EFA0100768A69 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF2EE282EFA0100768A69 /* MainView.swift */; };
 		EEDAF2F3282EFAD900768A69 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF2F2282EFAD900768A69 /* TeamsView.swift */; };
+		EEDAF2F7282EFCDB00768A69 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF2F6282EFCDB00768A69 /* PlayersView.swift */; };
+		EEDAF2FA282F031800768A69 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF2F9282F031800768A69 /* TeamsViewModel.swift */; };
+		EEDAF2FD282F04B900768A69 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EEDAF2FC282F04B900768A69 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,8 @@
 		EEDAF2D3282EA0BA00768A69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEDAF2EE282EFA0100768A69 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EEDAF2F2282EFAD900768A69 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		EEDAF2F6282EFCDB00768A69 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		EEDAF2F9282F031800768A69 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDAF2FD282F04B900768A69 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 		EEDAF2EB282EF9C600768A69 /* feature */ = {
 			isa = PBXGroup;
 			children = (
+				EEDAF2F4282EFCC700768A69 /* players */,
 				EEDAF2F0282EFAC500768A69 /* teams */,
 				EEDAF2EC282EF9EC00768A69 /* main */,
 			);
@@ -100,6 +107,7 @@
 		EEDAF2F0282EFAC500768A69 /* teams */ = {
 			isa = PBXGroup;
 			children = (
+				EEDAF2F8282F030C00768A69 /* viewmodel */,
 				EEDAF2F1282EFACF00768A69 /* views */,
 			);
 			path = teams;
@@ -111,6 +119,30 @@
 				EEDAF2F2282EFAD900768A69 /* TeamsView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		EEDAF2F4282EFCC700768A69 /* players */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2F5282EFCD100768A69 /* views */,
+			);
+			path = players;
+			sourceTree = "<group>";
+		};
+		EEDAF2F5282EFCD100768A69 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2F6282EFCDB00768A69 /* PlayersView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		EEDAF2F8282F030C00768A69 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2F9282F031800768A69 /* TeamsViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +161,9 @@
 			dependencies = (
 			);
 			name = eSports;
+			packageProductDependencies = (
+				EEDAF2FC282F04B900768A69 /* Alamofire */,
+			);
 			productName = eSports;
 			productReference = EEDAF2C9282EA0B900768A69 /* eSports.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +192,9 @@
 				Base,
 			);
 			mainGroup = EEDAF2C0282EA0B800768A69;
+			packageReferences = (
+				EEDAF2FB282F04B900768A69 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = EEDAF2CA282EA0B900768A69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,10 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDAF2F7282EFCDB00768A69 /* PlayersView.swift in Sources */,
 				EEDAF2CF282EA0B900768A69 /* ContentView.swift in Sources */,
 				EEDAF2EF282EFA0100768A69 /* MainView.swift in Sources */,
 				EEDAF2CD282EA0B900768A69 /* eSportsApp.swift in Sources */,
 				EEDAF2F3282EFAD900768A69 /* TeamsView.swift in Sources */,
+				EEDAF2FA282F031800768A69 /* TeamsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEDAF2FB282F04B900768A69 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEDAF2FC282F04B900768A69 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEDAF2FB282F04B900768A69 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEDAF2C1282EA0B800768A69 /* Project object */;
 }

@@ -10,17 +10,19 @@ import SwiftUI
 struct MainView: View {
     
     @State var goToTeams: Bool = false
+    @State var goToPlayers: Bool = false
     
     var body: some View {
         VStack{
             NavigationLink(destination: TeamsView(), isActive: $goToTeams) { EmptyView() }
+            NavigationLink(destination: PlayersView(), isActive: $goToPlayers) { EmptyView() }
             
             HStack{
                 MyButton(text: "Teams", clicked: {
-                        goToTeams.toggle()
+                    goToTeams.toggle()
                 })
                 MyButton(text: "Jogadores", clicked: {
-                        goToTeams.toggle()
+                    goToPlayers.toggle()
                 })
             }.padding()
             
