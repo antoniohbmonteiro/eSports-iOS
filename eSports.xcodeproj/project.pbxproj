@@ -11,6 +11,8 @@
 		EEDAF2CF282EA0B900768A69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF2CE282EA0B900768A69 /* ContentView.swift */; };
 		EEDAF2D1282EA0BA00768A69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF2D0282EA0BA00768A69 /* Assets.xcassets */; };
 		EEDAF2D4282EA0BA00768A69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF2D3282EA0BA00768A69 /* Preview Assets.xcassets */; };
+		EEDAF2EF282EFA0100768A69 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF2EE282EFA0100768A69 /* MainView.swift */; };
+		EEDAF2F3282EFAD900768A69 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF2F2282EFAD900768A69 /* TeamsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EEDAF2CE282EA0B900768A69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEDAF2D0282EA0BA00768A69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDAF2D3282EA0BA00768A69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEDAF2EE282EFA0100768A69 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EEDAF2F2282EFAD900768A69 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		EEDAF2CB282EA0B900768A69 /* eSports */ = {
 			isa = PBXGroup;
 			children = (
+				EEDAF2EB282EF9C600768A69 /* feature */,
 				EEDAF2CC282EA0B900768A69 /* eSportsApp.swift */,
 				EEDAF2CE282EA0B900768A69 /* ContentView.swift */,
 				EEDAF2D0282EA0BA00768A69 /* Assets.xcassets */,
@@ -65,6 +70,47 @@
 				EEDAF2D3282EA0BA00768A69 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEDAF2EB282EF9C600768A69 /* feature */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2F0282EFAC500768A69 /* teams */,
+				EEDAF2EC282EF9EC00768A69 /* main */,
+			);
+			path = feature;
+			sourceTree = "<group>";
+		};
+		EEDAF2EC282EF9EC00768A69 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2ED282EF9F200768A69 /* views */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		EEDAF2ED282EF9F200768A69 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2EE282EFA0100768A69 /* MainView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		EEDAF2F0282EFAC500768A69 /* teams */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2F1282EFACF00768A69 /* views */,
+			);
+			path = teams;
+			sourceTree = "<group>";
+		};
+		EEDAF2F1282EFACF00768A69 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF2F2282EFAD900768A69 /* TeamsView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDAF2CF282EA0B900768A69 /* ContentView.swift in Sources */,
+				EEDAF2EF282EFA0100768A69 /* MainView.swift in Sources */,
 				EEDAF2CD282EA0B900768A69 /* eSportsApp.swift in Sources */,
+				EEDAF2F3282EFAD900768A69 /* TeamsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

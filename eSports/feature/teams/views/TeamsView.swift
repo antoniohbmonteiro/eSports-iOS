@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TeamsView.swift
 //  eSports
 //
 //  Created by Antonio Henrique Braga Monteiro  on 13/05/22.
@@ -7,16 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TeamsView: View {
     var body: some View {
-        NavigationView{
-            MainView()
-        }
+        Text("Teams View huhul")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TeamsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TeamsView()
     }
 }
